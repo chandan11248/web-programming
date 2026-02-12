@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>
+        dynamically created table
+    </h1>
+    <div id="tab">
+
+    </div>
+    
+
+    <script>
+        const root=document.getElementById("tab")
+        const t=document.createElement("p");
+        t.textContent="products details";
+        root.appendChild(t);
+        const tableRoot=document.createElement("table");
+        const trtag=document.createElement("tr");
+        const headers =["ID","NAME","AGE","ADDRESS"];
+        headers.forEach((i)=>{
+            let tdtag=document.createElement("td")
+
+             tdtag.textContent=i;
+             trtag.appendChild(tdtag);
+
+
+        })
+
+        tableRoot.appendChild(trtag);
+        root.appendChild(tableRoot);
+
+
+
+
+    </script>
+</body>
+</html>

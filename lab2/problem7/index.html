@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 7: Dynamic Table</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* CSS Class for even rows functionality */
+        .even-row {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Dynamic Table Generator</h1>
+
+    <input type="number" id="rows" placeholder="Rows" value="3">
+    <input type="number" id="cols" placeholder="Columns" value="3">
+    <button onclick="generateTable()">Generate Table</button>
+    <button onclick="highlightEven()">Highlight Even Rows</button>
+    <br><br>
+    <button onclick="addRow()" style="background-color: lightgreen;">Add Row</button>
+    <button onclick="deleteRow()" style="background-color: lightcoral;">Delete Row</button>
+
+    <div id="tableContainer"></div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

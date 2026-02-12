@@ -1,0 +1,178 @@
+/* Basic Styles for Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.header {
+    background-color: purple;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    margin-top: 15px;
+}
+
+.contact-info p {
+    margin: 5px;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Section */
+.section {
+    padding: 40px 0;
+    background-color: white;
+}
+
+.gray-bg {
+    background-color: #e8e8e8;
+}
+
+.section h2 {
+    font-size: 28px;
+    color: purple;
+    margin-bottom: 20px;
+    border-bottom: 2px solid purple;
+    padding-bottom: 10px;
+}
+
+/* Summary */
+.summary {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Skills */
+.skill-category {
+    margin-bottom: 20px;
+}
+
+.skill-category h3 {
+    font-size: 20px;
+    color: darkpurple;
+    margin-bottom: 10px;
+}
+
+.skill-category p {
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* Projects */
+.project {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-left: 3px solid purple;
+}
+
+.project h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.tech-stack {
+    color: purple;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.project ul {
+    margin-left: 25px;
+}
+
+.project li {
+    margin-bottom: 8px;
+}
+
+/* Education */
+.education {
+    padding: 15px;
+    background-color: white;
+}
+
+.education h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.institution {
+    font-size: 16px;
+    color: purple;
+}
+
+.date {
+    font-style: italic;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+/* Certifications */
+.certifications {
+    margin-left: 25px;
+}
+
+.certifications li {
+    margin-bottom: 10px;
+}
+
+/* Strengths */
+.strengths {
+    margin-top: 20px;
+}
+
+.strength-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+}
+
+.strength-item h3 {
+    font-size: 18px;
+    color: purple;
+    margin-bottom: 8px;
+}
+
+.strength-item p {
+    font-size: 14px;
+}
+
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+.footer p {
+    margin: 0;
+}

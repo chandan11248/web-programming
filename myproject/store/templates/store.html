@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>This is store homepage </h1>
+    <p>Browse our products</p>
+
+    {% for product in products %}
+    Name: {{product.name}}
+    Price: Rs. {{product.price}}
+    In stock: {{product.stock}}
+    <br>
+    <a href="/store/update-product/{{product.id}}/">Edit</a> | 
+    <a href="/store/delete-product/{{product.id}}/" style="color: red;">Delete</a>
+    <hr>
+    <br>
+    {% endfor %}
+    
+    <a href="/store/add-product/">Add New Product</a>
+    <br>
+    <a href="/store/retrieve-product/">retrieve-product</a>
+</body>
+</html>

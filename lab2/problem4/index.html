@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 4: Guessing Game</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .game-box {
+            border: 2px solid #333;
+            padding: 20px;
+            display: inline-block;
+            border-radius: 10px;
+            background-color: #f0f8ff;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 1.1em;
+            width: 100px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1.1em;
+            cursor: pointer;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        p {
+            font-size: 1.2em;
+            margin: 10px 0;
+        }
+
+        .message {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="game-box">
+        <h1>Number Guessing Game</h1>
+        <p>I am thinking of a number between 1 and 100.</p>
+
+        <input type="number" id="guessInput" placeholder="1-100">
+        <button onclick="checkGuess()">Guess</button>
+
+        <p class="message" id="message"></p>
+        <p>Score: <span id="score">100</span></p>
+
+        <button onclick="restartGame()" style="background-color: #007bff; margin-top: 10px;">Restart Game</button>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

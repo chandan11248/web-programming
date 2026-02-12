@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Product</title>
+</head>
+<body>
+    <h1>Update Product: {{ product.name }}</h1>
+    
+    <form method="POST">
+        {% csrf_token %}
+        {{ product_form.as_p }}
+        <button type="submit">Update Product</button>
+    </form>
+    
+    <br>
+    <a href="/store/">Back to Store</a>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attention Is All You Need - Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Transformer Blog</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>Attention Is All You Need: The Theory</h2>
+        <img src="transformer.png" alt="Transformer Architecture" class="blog-image">
+        <p>
+            The "Attention Is All You Need" paper introduced the Transformer architecture, which replaced recurrent
+            neural networks (RNNs) and convolutional neural networks (CNNs) in sequence modeling tasks.
+        </p>
+        <h3>Self-Attention Mechanism</h3>
+        <p>
+            The core idea is the self-attention mechanism. It allows the model to weigh the importance of different
+            words in a sentence relative to each other, regardless of their distance. This enables parallelization,
+            making it much faster to train than RNNs.
+        </p>
+        <h3>Multi-Head Attention</h3>
+        <p>
+            Multi-head attention allows the model to jointly attend to information from different representation
+            subspaces at different positions. Instead of one attention head, it uses multiple heads to learn different
+            relationships.
+        </p>
+        <h3>Encoder and Decoder</h3>
+        <p>
+            The architecture consists of an encoder and a decoder. The encoder processes the input sequence, and the
+            decoder generates the output sequence. Each is made up of several identical layers.
+        </p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 DL Blog</p>
+    </footer>
+
+</body>
+
+</html>

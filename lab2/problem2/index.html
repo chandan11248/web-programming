@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 2: Student Grade Analyzer</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        input,
+        button {
+            padding: 10px;
+            margin: 5px 0;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        .fail {
+            background-color: #ffcccc;
+            color: red;
+        }
+
+        .pass {
+            background-color: #ccffcc;
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Student Grade Analyzer</h1>
+
+        <h3>Enter Student Details</h3>
+        <input type="text" id="name" placeholder="Student Name">
+        <input type="number" id="math" placeholder="Math Marks (0-100)">
+        <input type="number" id="science" placeholder="Science Marks (0-100)">
+        <input type="number" id="english" placeholder="English Marks (0-100)">
+        <button onclick="addStudent()">Add Student & Calculate Grade</button>
+
+        <h3>Results</h3>
+        <table id="resultTable">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Total</th>
+                    <th>Percentage</th>
+                    <th>Grade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Rows will be added here by JavaScript -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

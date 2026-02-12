@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 8: Shopping Cart</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .products,
+        .cart {
+            border: 1px solid #ccc;
+            padding: 20px;
+            width: 45%;
+            border-radius: 10px;
+        }
+
+        .product-item,
+        .cart-item {
+            border-bottom: 1px solid #eee;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        button {
+            padding: 5px 10px;
+            cursor: pointer;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 3px;
+        }
+
+        button.remove {
+            background-color: #dc3545;
+        }
+
+        .total {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-top: 20px;
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Simple E-Commerce Store</h1>
+
+    <div class="container">
+        <!-- Product List -->
+        <div class="products">
+            <h2>Products</h2>
+            <div id="productList"></div>
+        </div>
+
+        <!-- Cart -->
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <div id="cartList">
+                <p>Cart is empty</p>
+            </div>
+            <div class="total">Total: $<span id="totalPrice">0</span></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

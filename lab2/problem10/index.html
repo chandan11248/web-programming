@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 10: Theme Manager</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .theme-panel {
+            border: 2px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.8);
+        }
+
+        select,
+        button {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            font-size: 1.1em;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Theme Manager</h1>
+
+    <div class="theme-panel">
+        <p>Select your preferred colors below:</p>
+
+        <label>Background Color:</label>
+        <select id="bgColor">
+            <option value="white">White</option>
+            <option value="lightblue">Light Blue</option>
+            <option value="#333">Dark Mode (Black)</option>
+            <option value="lightgreen">Light Green</option>
+        </select>
+
+        <label>Text Color:</label>
+        <select id="textColor">
+            <option value="black">Black</option>
+            <option value="blue">Blue</option>
+            <option value="white">White (for Dark Mode)</option>
+            <option value="darkgreen">Dark Green</option>
+        </select>
+
+        <button onclick="applyTheme()">Apply Theme</button>
+        <button onclick="resetTheme()" style="background-color: #ccc;">Reset to Default</button>
+
+        <p id="currentThemeLog" style="margin-top: 20px; font-size: 0.9em;"></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

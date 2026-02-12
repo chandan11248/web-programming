@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem 3: Dynamic To-Do List</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 5px;
+        }
+
+        input {
+            flex: 1;
+            padding: 10px;
+        }
+
+        button {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background: #f4f4f4;
+            margin: 5px 0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        li.completed span {
+            text-decoration: line-through;
+            color: gray;
+        }
+
+        .filters {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .filters button {
+            margin: 0 5px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>My To-Do List</h1>
+
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Add a new task...">
+            <button onclick="addTask()">Add</button>
+        </div>
+
+        <div class="filters">
+            <button onclick="filterTasks('all')">All</button>
+            <button onclick="filterTasks('active')">Active</button>
+            <button onclick="filterTasks('completed')">Completed</button>
+        </div>
+
+        <ul id="taskList">
+            <!-- Tasks will appear here -->
+        </ul>
+
+        <p>Completed: <span id="completedCount">0</span></p>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
