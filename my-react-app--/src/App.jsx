@@ -2,18 +2,33 @@ import Header from "./header";
 import Footer from "./footer"; 
 import { useState } from "react";
 import SumCard  from "./sumCard";
+import ProductCard from "./pages/productCard";
 function App(){
-  const[a,setA]=useState(10);
-  const[b,setB]=useState(20);
-  const[res,setRes]=useState(null)
+  const [products,setProducts]=useState([
+
+    {name:"rice",price:100},
+    {name:"sugar",price:150},
+    {name:"apple",price:320},
+  ]);
+
+
+  const updatePrice = (index) => {
+    alert(index)
+    setProducts(products.map(product => ({
+      ...product,
+      price: product.price + 10
+    })));
+  };
   
 
  
 
   return  <>< Header /> 
-  <p>the calculate={res}</p>
- 
-  <SumCard a={a} b={b} setRes={setRes}/>
+
+  <ProductCard products={products}/>
+
+  
+  
 
   <Footer />
   </>;
